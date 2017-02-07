@@ -15,12 +15,6 @@
             "description": "If checked, the user needs to provide tracking settings or will cause a validation error",
             "key": "requireTrackingSettings",
             "view": "boolean"
-          },
-          {
-            "label": "foo",
-            "description": "FOOOOOOOO",
-            "key": "foo",
-            "view": "number"
           }
         ]
       }
