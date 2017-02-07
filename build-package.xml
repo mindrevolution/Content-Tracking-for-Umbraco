@@ -20,7 +20,7 @@
 <PropertyGroup>
 <RootDir>$(MSBuildProjectDirectory)</RootDir>
 <BuildDir>$(RootDir)\build\output</BuildDir>
-<PackageDir>$(RootDir)\dist\umbraco-package</PackageDir>
+<PackageDir>$(RootDir)\..\dist\umbraco-package</PackageDir>
 </PropertyGroup>
  
 <!--
