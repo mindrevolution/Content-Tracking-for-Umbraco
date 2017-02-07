@@ -1,0 +1,37 @@
+﻿{
+  "propertyEditors": [
+    {
+      "alias": "mindrevolution.ContentTracking",
+      "name": "Content Tracking for Umbraco (Google Analytics)",
+      "valueType": "JSON",
+      "editor": {
+        "view": "~/App_Plugins/mindrevolution.ContentTracking/PropertyEditor.html"
+      },
+
+      "prevalues": {
+        "fields": [
+          {
+            "label": "Require tracking settings",
+            "description": "If checked, the user needs to provide tracking settings or will cause a validation error",
+            "key": "requireTrackingSettings",
+            "view": "boolean"
+          },
+          {
+            "label": "foo",
+            "description": "FOOOOOOOO",
+            "key": "foo",
+            "view": "number"
+          }
+        ]
+      }
+    }
+  ],
+
+  "javascript": [
+    "~/App_Plugins/mindrevolution.ContentTracking/ContentTracking.js"
+  ],
+
+  "css": [
+    "~/App_Plugins/mindrevolution.ContentTracking/ContentTracking.css"
+  ]
+}

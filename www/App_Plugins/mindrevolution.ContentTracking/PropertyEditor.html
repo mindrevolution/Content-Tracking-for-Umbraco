@@ -1,0 +1,25 @@
+﻿<div ng-controller="mindrevolution.ContentTracking.TrackingController" class="contenttracking-propertyeditor">
+
+    <table>
+        <tr>
+            <td>Kategorie</td>
+            <td>
+                <select name="ContentTrackingCategory"
+                        ng-model="model.value.category"
+                        ng-options="x for x in getCategories()"
+                        ng-required="{{requireTrackingSettings}}">
+                </select>
+            </td>
+            <td>&nbsp;</td>
+            <td ng-show="model.value.category">Format</td>
+            <td ng-show="model.value.category">
+                <select name="ContentTrackingFormat"
+                        ng-model="model.value.format"
+                        ng-options="x for x in getFormats(model.value.category)"
+                        ng-required="{{requireTrackingSettings}}">
+                </select>
+            </td>
+        </tr>
+    </table>
+
+</div>
