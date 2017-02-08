@@ -2,7 +2,7 @@
 
     <table>
         <tr>
-            <td>Kategorie</td>
+            <td><localize key="Editor_Category">Category</localize></td>
             <td>
                 <select name="ContentTrackingCategory"
                         ng-model="model.value.category"
@@ -11,7 +11,7 @@
                 </select>
             </td>
             <td>&nbsp;</td>
-            <td ng-show="model.value.category">Format</td>
+            <td ng-show="model.value.category"><localize key="Editor_Format">Format</localize></td>
             <td ng-show="model.value.category">
                 <select name="ContentTrackingFormat"
                         ng-model="model.value.format"

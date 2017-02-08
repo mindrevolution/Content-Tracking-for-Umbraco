@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<language alias="de" intName="German (DE)" localName="Deutsch (DE)" lcid="7" culture="de-DE">
+  <creator>
+    <name>Marc Stöcker</name>
+    <link>http://www.mindrevolution.com</link>
+  </creator>
+  <area alias="Editor">
+    <key alias="Category">Kategorie</key>
+    <key alias="Format">Format</key>
+  </area>
+</language>
