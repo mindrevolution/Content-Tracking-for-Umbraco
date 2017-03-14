@@ -12,13 +12,16 @@ namespace mindrevolution.ContentTracking.Models
         public string Category { get; set; }
         [JsonProperty("format")]
         public string Format { get; set; }
+        [JsonProperty("funnelstage")]
+        public string FunnelStage { get; set; }
 
         public PageMeta() {}
 
-        public PageMeta(string category, string format)
+        public PageMeta(string category, string format, string funnelstage)
         {
             Category = category;
             Format = format;
+            FunnelStage = funnelstage;
         }
 
         public static PageMeta Deserialize(string json)
@@ -31,7 +34,6 @@ namespace mindrevolution.ContentTracking.Models
             }
             catch (Exception ex)
             {
-                throw ex;
                 Umbraco.Core.Logging.LogHelper.WarnWithException<PageMeta>(string.Format("Unable to deserialize JSON: {0}{1}{2}", ex.Message, Environment.NewLine, json), ex);
                 return null;
             }

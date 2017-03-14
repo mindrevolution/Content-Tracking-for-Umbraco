@@ -20,6 +20,15 @@
                 </select>
             </td>
         </tr>
+        <tr>
+            <td><localize key="Editor_FunnelStage">Funnel Stage</localize></td>
+            <td>
+                <select name="ContentTrackingFunnelStage"
+                        ng-model="model.value.funnelstage"
+                        ng-options="x.Stage as x.Label for x in getFunnelStages()"
+                        ng-required="{{requireTrackingSettings}}"></select>
+            </td>
+        </tr>
     </table>
 
 </div>

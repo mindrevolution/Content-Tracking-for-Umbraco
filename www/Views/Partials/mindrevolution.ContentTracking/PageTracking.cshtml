@@ -1,3 +1,4 @@
+@using mindrevolution.ContentTracking.Models;
 @inherits Umbraco.Web.Mvc.UmbracoTemplatePage
 <script>
     (function (i, s, o, g, r, a, m) {
@@ -12,9 +13,19 @@
 
     @if (Model.Content.HasValue("ContentTracking"))
     {
-        mindrevolution.ContentTracking.Models.PageMeta ContentTracking = Model.Content.GetPropertyValue<mindrevolution.ContentTracking.Models.PageMeta>("ContentTracking");
-        <text>ga('set', 'contentGroup1', '@ContentTracking.Category'); </text>
-        <text>ga('set', 'contentGroup3', '@ContentTracking.Format'); </text>
+        PageMeta ContentTracking = Model.Content.GetPropertyValue<PageMeta>("ContentTracking");
+        if (!string.IsNullOrEmpty(ContentTracking.Category))
+        {
+            <text>ga('set', 'contentGroup1', '@ContentTracking.Category'); </text>
+        }
+        if (!string.IsNullOrEmpty(ContentTracking.Format))
+        {
+            <text>ga('set', 'contentGroup3', '@ContentTracking.Format'); </text>
+        }
+        if (!string.IsNullOrEmpty(ContentTracking.FunnelStage))
+        {
+            <text>ga('set', 'contentGroup5', '@ContentTracking.FunnelStage'); </text>
+        }
     }
 
     ga('send', 'pageview');

@@ -39,6 +39,30 @@ app.controller("mindrevolution.ContentTracking.TrackingController", ["$scope", "
         }
     ];
 
+    $scope.model.config.ContentFunnelStages =
+    [
+        {
+            Stage: "Attention",
+            Label: "Aufmerksamkeit (Attention)"
+        },
+        {
+            Stage: "Interest",
+            Label: "Interesse (Interest)"
+        },
+        {
+            Stage: "Desire",
+            Label: "Abwägung (Desire)"
+        },
+        {
+            Stage: "Action",
+            Label: "Handlung (Action)"
+        },
+        {
+            Stage: "Retention",
+            Label: "Bindung (Retention)"
+        },
+    ];
+
     $scope.getCategories = function () {
         var list = [];
 
@@ -59,6 +83,16 @@ app.controller("mindrevolution.ContentTracking.TrackingController", ["$scope", "
                 }
             });
         }
+
+        return list;
+    };
+
+    $scope.getFunnelStages = function () {
+        var list = [];
+
+        angular.forEach($scope.model.config.ContentFunnelStages, function (stage) {
+            list.push(stage);
+        });
 
         return list;
     };

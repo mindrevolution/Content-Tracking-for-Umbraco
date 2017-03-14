@@ -7,5 +7,6 @@
   <area alias="Editor">
     <key alias="Category">Category</key>
     <key alias="Format">Format</key>
+    <key alias="FunnelStage">Customer Journey</key>
   </area>
 </language>
