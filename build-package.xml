@@ -46,7 +46,6 @@
 <Target Name="PrepairFiles" DependsOnTargets="Compile">
     <ItemGroup>
         <BinFiles Include="$(RootDir)\src\bin\Debug\mindrevolution.ContentTracking.dll" />
-        <!--<BinFiles Include="$(RootDir)\src\bin\Debug\mindrevolution.ContentTracking.pdb" />-->
         <AppPluginFiles Include="$(RootDir)\www\App_Plugins\mindrevolution.ContentTracking\*.*" />
         <ViewsFiles Include="$(RootDir)\www\Views\Partials\mindrevolution.ContentTracking\*.*" />
         <PackageFile Include="$(RootDir)\Package.xml" />

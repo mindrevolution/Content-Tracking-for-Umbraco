@@ -16,7 +16,7 @@
 			<name>Marc Stöcker</name>
 			<website>https://mindrevolution.com</website>
 		</author>
-		<readme><![CDATA[Content Tracking is a property editor that allows editors to select page-level meta data from a defined list to enable content type tracking with i.e. Google Analytics.]]></readme>
+		<readme><![CDATA[Content Tracking is a property editor that allows editors to select page-level meta data from a defined list to enable content type and funnel data tracking with i.e. Google Analytics.]]></readme>
 	</info>
 
 	<DocumentTypes />
